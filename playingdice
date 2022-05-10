@@ -1,0 +1,13 @@
+while play == 'SIM':
+    print('Jogando o dado...')
+# como comentado anteriormente time.sleep irá dar o tempo de maneira com que entenda que o dado esta sendo jogado
+    time.sleep(1)
+# random.choice + lista com variavel dado para randomizar a escolha
+    print(f'[ {random.choice(dado)} ]')
+# repetindo o código
+    play = str(input('Vamos jogar?: \n-Sim ou Não-\n:')).strip().upper()
+# condição caso haja negativa para continuidade do jogo
+if play == 'NÃO':
+    print('Até breve!')
+else:
+    print('COMANDO INVÁLIDO')
